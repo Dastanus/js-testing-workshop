@@ -8,6 +8,7 @@ const sinonChai = require('../node_modules/sinon-chai');
 chai.use(sinonChai);
 
 global.expect = chai.expect;
+global.assert = chai.assert;
 global.should = chai.should();
 
 // --------------------- specs setup ---------------------

@@ -7,7 +7,8 @@
   "description": "tools and tasks for workshop",
   "scripts": {
     "test:unit:dbg": "node ./node_modules/mocha/bin/mocha --inspect-brk -r ./tools/setup.js  -- \"./specs/*.spec.js\"",
-    "test:unit": "node ./node_modules/mocha/bin/mocha -r ./tools/setup.js  -- \"./specs/*.spec.js\""
+    "test:unit": "node ./node_modules/mocha/bin/mocha -r ./tools/setup.js  -- \"./specs/*.spec.js\"",
+    "tests": "mocha ./specs/*.spec.js -r ./tools/setup.js"
   },
   "devDependencies": {
     "chai": "^4.2.0",
